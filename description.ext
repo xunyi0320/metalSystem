@@ -1,0 +1,5 @@
+class CfgFunctions
+{
+	#include "medal_system\CfgFunctions.hpp"
+};
+#include "medal_system\dialog.hpp"
