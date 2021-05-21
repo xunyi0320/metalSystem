@@ -14,6 +14,7 @@ _playerMedalList = _playerMedalList - [[-1,name player]];
 
 _playerMedalIndex = [];
 _playerMedalTime = [];
+_playerMedalList sort true; 
 {
 	_playerMedalIndex = _playerMedalIndex + [_x#0];
 	_playerMedalTime = _playerMedalTime + [_x#1];

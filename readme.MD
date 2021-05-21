@@ -5,7 +5,11 @@
 1.已获得勋章的可视化
 2.颁发/撤销勋章的UI:你不再需要在控制台操作函数!!!
 
-
+特征:
+使用HashMap储存数据
+使用profileNamespace储存数据:勋章数据可以保存很久!
+可扩展性:在HashMap为每一个勋章都定义了一个数组:你甚至可以在里面写奖励表和作战过程.
+v1.0.1巨大的可用勋章库容量:现在小数可以被识别.
 
 所有勋章定义目录:
 medal_system\initServer.sqf
@@ -29,8 +33,8 @@ SE:初始化HashMap Player函数:
 JZ_fnc_initListOfMetalOwned
 
 使用的dialog:
-JZ_MedalPlayer //玩家的勋章UI面板;
-JZ_MedalAdmin //管理员的勋章UI面板;
+JZ_MedalPlayer //玩家的勋章UI面板;  IDC:2700
+JZ_MedalAdmin //管理员的勋章UI面板; IDC:2700
 请自行在适当的位置增加适当的命令:
 例如:initPlayerLocal.sqf
 player addAction ["UIPLAYER",{createDialog "JZ_MedalPlayer";}];
@@ -43,3 +47,15 @@ player addAction ["UIADMIN",{createDialog "JZ_MedalAdmin";}];
 3.在initPlayerServer.sqf中增加
 []execVM "medal_system\initServer.sqf";
 
+----------------------2020.5.21----------------V1.0.1
+修复:
+1.更新了勋章所颁布的日期和显示日期不一致的错误.
+
+添加:
+1.现在勋章序号可以是小数.
+2.在管理员菜单中增加了勋章序号以方便识别
+3.扩充了预存库.
+4.现在当前任务库由需要复制的包括详细说明的数组变成了勋章序号.
+
+删除:
+无

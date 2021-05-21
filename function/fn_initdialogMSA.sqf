@@ -14,7 +14,7 @@ _dynamicText ctrlSetText correctMedal#1;
 
 _listbox  = ((findDisplay _ctrl) displayCtrl 1502);
 {
-	_text = _x#1;
+	_text = str(_x#0)+":"+_x#1;
 	_listbox lbAdd _text;
 } forEach  medalList;
 

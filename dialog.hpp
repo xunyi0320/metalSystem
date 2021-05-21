@@ -1,6 +1,3 @@
-import RscText;
-import RscListbox;
-import RscButton;
 import RscEditMulti;
 #define GUI_GRID_X	(0)
 #define GUI_GRID_Y	(0)
