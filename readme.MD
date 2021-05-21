@@ -59,3 +59,9 @@ player addAction ["UIADMIN",{createDialog "JZ_MedalAdmin";}];
 
 删除:
 无
+
+请注意:如果出现勋章面板打开错误或其他问题,请在dialog.hpp下加
+import RscText;
+import RscListbox;
+import RscButton;
+三行,由于适配问题和疏忽,会造成当前问题.或许会在下一个版本修复.
